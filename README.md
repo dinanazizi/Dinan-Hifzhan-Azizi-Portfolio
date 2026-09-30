@@ -431,6 +431,78 @@ Repository:
 https://github.com/dinanazizi/macos-hids-rgc-dashboard
 
 
+# 6. Data Lake Cloud Project
+
+
+## Overview
+
+A Data Lake ecosystem project focusing on data pipeline orchestration, distributed data processing, object storage, data versioning, and analytics.
+
+
+## System Components
+
+
+### Apache Airflow
+
+Used for workflow orchestration and data pipeline management.
+
+Features:
+- Programmatic workflow scheduling
+- Pipeline monitoring
+- Automated data processing flow
+
+
+### Dremio
+
+A Data Lake engine used for processing different types of data including structured, semi-structured, and unstructured data.
+
+Features:
+- Data querying
+- Data processing
+- Unified data access
+
+
+### MinIO Server
+
+Object storage system used as Data Lake storage.
+
+Features:
+- S3-compatible storage
+- Large-scale data storage management
+
+
+### Nessie
+
+Data versioning system used for managing data changes.
+
+Features:
+- Version-controlled data management
+- Data history tracking
+
+
+### Metabase
+
+Data analytics platform used for visualization and reporting.
+
+Features:
+- Data querying
+- Dashboard creation
+- Executive summary generation
+
+
+## Tech Stack
+
+- Apache Airflow
+- Dremio
+- MinIO
+- Nessie
+- Metabase
+
+
+Repository:
+
+https://github.com/dinanazizi/datalake-cloud-project
+
 
 
 
