@@ -7,22 +7,21 @@
 
 Welcome to my engineering portfolio.
 
-I am an Electronics and Instrumentation graduate with interests in PCB design, embedded systems, FPGA-based digital design, and hardware development.
+I am an Electronics and Instrumentation graduate interested in PCB design, embedded systems, FPGA-based digital design, and hardware development.
 
-My experience includes multilayer PCB development, MCU-based control systems, RTL design, hardware verification, IoT integration, and system testing.
+My experience includes PCB development, MCU-based control systems, RTL design, hardware verification, IoT integration, and system testing.
 
 
 # Technical Skills
 
 
-## PCB & Hardware Design
+## PCB & Hardware
 
 - Schematic Design
 - Component Selection
 - PCB Layout and Routing
 - Multilayer PCB Design
 - ERC / DRC Verification
-- Hardware Integration
 - Hardware Testing
 
 
@@ -43,12 +42,12 @@ My experience includes multilayer PCB development, MCU-based control systems, RT
 - Verilog HDL
 - SystemVerilog
 - RTL Design
-- Finite State Machine (FSM)
-- AXI4-Lite Interface
-- FPGA Simulation and Verification
+- FSM
+- AXI4-Lite
+- FPGA Verification
 
 
-## Software, Cloud & Security
+## Software & Cloud
 
 - Python
 - Git
@@ -70,72 +69,39 @@ My experience includes multilayer PCB development, MCU-based control systems, RT
 
 ---
 
-# 1. ESP32-Based IoT Gateway PCB Design
+# 1. ESP32-Based IoT Gateway PCB
 
 
 ## Overview
 
-A custom-designed four-layer IoT gateway hardware platform based on the ESP32-S3 microcontroller.
+A four-layer IoT gateway PCB based on ESP32-S3 developed using Altium Designer.
 
-The project focuses on developing a modular hardware platform integrating communication interfaces, analog/digital expansion, industrial protocols, storage, and power management into a single PCB design.
+The system integrates communication interfaces, analog/digital expansion, storage, and power management into a modular hardware platform.
 
 
-## Main Contributions
+## Contributions
 
-- Developed hierarchical schematic design
-- Participated in component selection and hardware architecture design
-- Designed PCB placement and routing
-- Integrated communication and peripheral interfaces
-- Designed power management circuits
-- Performed design rule verification
+- Hierarchical schematic design
+- Component selection
+- PCB placement and routing
+- Power circuit design
+- Design rule verification
 
 
 ## Hardware Features
 
-
-### Main Controller
-
-- ESP32-S3 Microcontroller
-
-
-### Communication Interfaces
-
-- Ethernet Interface using W5500
-- LTE Communication Interface
-- RS-485 Interface
-- CAN Bus Interface using SN65HVD230
-
-
-### Data Acquisition
-
-- ADS7128 Analog Input Expansion
-- TCA9534 GPIO Expansion
-
-
-### Storage
-
-- MicroSD Card Interface
-
-
-### Power Management
-
-- 5V Input
-- 3.3V Regulation
-- TPS62132 Buck Converter
-- Protection and filtering circuits
-
-
-## PCB Specification
-
-- Four-layer PCB
-- Designed using Altium Designer
-- Includes schematic design, component placement, routing, and verification
+- ESP32-S3
+- Ethernet (W5500)
+- LTE Interface
+- RS-485 and CAN Bus
+- ADS7128 ADC
+- GPIO Expansion
+- MicroSD Interface
 
 
 ## Tools
 
-- Altium Designer
-- ESP32-S3
+Altium Designer, ESP32-S3
 
 
 Repository:
@@ -146,7 +112,6 @@ https://github.com/dinanazizi/ESP32-Based-IoT-Gateway
 
 ---
 
-
 # 2. IoT-Based Smart Office Energy Management System
 
 
@@ -155,84 +120,34 @@ https://github.com/dinanazizi/ESP32-Based-IoT-Gateway
 
 ## Overview
 
-An IoT-based smart office energy management prototype developed using STM32F411 and ESP8266.
+An IoT-based energy management prototype using STM32F411 and ESP8266.
 
-The system integrates PCB design, embedded firmware, sensor monitoring, automatic control, cloud communication, and secure MQTT authentication.
+The system integrates sensor monitoring, automatic control, cloud communication, and secure MQTT authentication.
 
 
-## Main Contributions
+## Contributions
 
-- Designed schematic and PCB layout
-- Performed component selection and PCB verification
-- Developed STM32 embedded firmware
-- Integrated ESP8266 communication gateway
+- Designed PCB and schematic
+- Developed STM32 firmware
+- Integrated ESP8266 gateway
 - Implemented AWS IoT Core communication
-- Developed MQTT over TLS authentication
-- Performed hardware testing and validation
+- Performed hardware testing
 
 
-## Hardware System
+## Technologies
 
-
-### Controller
-
-- STM32F411 Edge Controller
-
-
-### Communication Gateway
-
-- ESP8266 WiFi Module
-
-
-### Sensors
-
-- PIR Occupancy Sensor
-- DHT22 Temperature and Humidity Sensor
-- ACS712 Current Sensor
-
-
-### Control System
-
-- Relay-based automatic control
-- LED and 5V DC fan as simulation loads
-
-
-## Communication Features
-
-- UART communication between STM32 and ESP8266
-- JSON telemetry
-- CRC16 validation
-- ACK/NACK handling
-- Retry mechanism
-
-
-## Security Implementation
-
-Implemented:
-
-- MQTT over TLS
-- X.509 certificate authentication
-
-
-## Testing Results
-
-| Parameter | Result |
-|---|---|
-| Energy reduction | 32.03% |
-| Unique packets transmitted | 1,520 |
-| Transmission success rate | 100% |
-| Average latency | 245 ms |
-
-
-## Tools
-
-- Autodesk EAGLE
 - STM32F411
 - ESP8266
+- MQTT over TLS
 - AWS IoT Core
-- Node-RED
-- InfluxDB
-- Grafana
+- Autodesk EAGLE
+
+
+## Results
+
+- Energy reduction: 32.03%
+- Packet success rate: 100%
+- Average latency: 245 ms
 
 
 Repository:
@@ -242,52 +157,25 @@ https://github.com/dinanazizi/Authenticated-IoT-Smart-Office-STM32-ESP8266
 
 
 
-
 # Digital Design & FPGA Projects
 
 
 ---
-
 
 # 3. FPGA Secure Boot Status Monitoring Peripheral
 
 
 ## Overview
 
-A Verilog RTL project implementing a secure-boot status monitoring peripheral for a Zynq-7000 FPGA platform.
-
-The design monitors boot authentication status, stores results, provides AXI4-Lite register access, and generates system status indications.
+A Verilog RTL project implementing a secure-boot monitoring peripheral for Zynq-7000 FPGA.
 
 
-## Main Contributions
+## Contributions
 
-- Designed RTL modules using Verilog/SystemVerilog
-- Implemented boot monitoring FSM
-- Developed AXI4-Lite register interface
-- Designed authentication status monitoring logic
-- Implemented error-code storage
-- Verified RTL functionality through simulation and synthesis
-
-
-## Features
-
-- AXI4-Lite register interface
-- FSM-based boot monitoring
-- Authentication failure latch
-- Error-code storage
-- Status monitoring output
-
-
-## Design Flow
-
-
-RTL Design
-      |
-Simulation
-      |
-Synthesis
-      |
-Timing Analysis
+- Designed RTL modules
+- Implemented FSM-based boot monitoring
+- Developed AXI4-Lite interface
+- Verified design through simulation and synthesis
 
 
 ## Tools
@@ -295,11 +183,6 @@ Timing Analysis
 - AMD Vivado
 - Verilog/SystemVerilog
 - XSim
-
-
-## Target Platform
-
-- Xilinx Zynq-7000 (XC7Z045)
 
 
 Repository:
@@ -310,63 +193,28 @@ https://github.com/dinanazizi/FPGA-Secure-Boot-RTL
 
 ---
 
-
 # 4. FPGA-Based NMEA Parser via UART
 
 
 ## Overview
 
-An FPGA-based NMEA parser developed using Verilog HDL.
+An FPGA-based UART NMEA parser using Verilog HDL.
 
-The system receives GPS NMEA sentences through UART communication, processes incoming data using FSM logic, validates checksum, and transmits parsing results back through UART.
-
-
-## System Architecture
+The system receives GPS data, processes it using FSM logic, validates checksum, and returns parsed results.
 
 
-PC Python Serial Sender
-          |
-          |
-FTDI USB-TTL Converter
-          |
-          |
-UART RX
-          |
-          |
-NMEA Parser FSM
-          |
-          |
-UART TX
-          |
-          |
-Serial Monitor
+## Contributions
 
-
-## Main Contributions
-
-- Designed UART communication module using Verilog HDL
-- Implemented FSM-based NMEA parsing
-- Developed start detection and field extraction logic
-- Implemented real-time XOR checksum validation
-- Designed UART receive and transmit flow
-- Performed hardware debugging using status indicators
-
-
-## Features
-
-- UART communication at 115200 baud rate
-- Start character detection
-- Field extraction
-- Checksum validation
-- Bidirectional serial communication
-- FSM-based processing
+- Developed UART communication module
+- Designed FSM-based parser
+- Implemented checksum validation
+- Performed FPGA hardware debugging
 
 
 ## Tools
 
 - Verilog HDL
 - AMD Vivado
-- XSim
 - Python Serial Communication
 
 
@@ -377,53 +225,32 @@ https://github.com/dinanazizi/FPGA-Based-NMEA-Parser-using-UART
 
 
 
-
 # Software, Data & Security Projects
 
 
 ---
-
 
 # 5. macOS HIDS, RGC Engine & Streamlit Dashboard
 
 
 ## Overview
 
-A cybersecurity monitoring project combining a macOS Host-based Intrusion Detection System (HIDS), Risk Governance and Compliance (RGC) engine, and Streamlit dashboard.
-
-The system monitors file changes, detects system anomalies, maps security events to governance requirements, and visualizes risk status.
+A cybersecurity monitoring project combining Host-based Intrusion Detection System (HIDS), Risk Governance and Compliance (RGC), and Streamlit visualization.
 
 
-## Main Features
+## Features
 
-
-### Host-based Intrusion Detection System (HIDS)
-
-- Monitors file changes
-- Detects abnormal system activities
-- Tracks security-related events
-
-
-### Risk Governance & Compliance (RGC) Engine
-
-- Maps security events into risk categories
-- Supports compliance monitoring workflow
-- Provides risk evaluation information
-
-
-### Streamlit Dashboard
-
-- Visualizes system monitoring results
-- Displays risk and compliance status
-- Provides real-time monitoring interface
+- File change monitoring
+- Security event detection
+- Risk compliance mapping
+- Dashboard visualization
 
 
 ## Technologies
 
 - Python
 - Streamlit
-- macOS Security Monitoring
-- Risk Governance & Compliance
+- Security Monitoring
 
 
 Repository:
@@ -431,66 +258,18 @@ Repository:
 https://github.com/dinanazizi/macos-hids-rgc-dashboard
 
 
+
+---
+
 # 6. Data Lake Cloud Project
 
 
 ## Overview
 
-A Data Lake ecosystem project focusing on data pipeline orchestration, distributed data processing, object storage, data versioning, and analytics.
+A Data Lake ecosystem project focusing on data pipeline, storage, processing, and analytics.
 
 
-## System Components
-
-
-### Apache Airflow
-
-Used for workflow orchestration and data pipeline management.
-
-Features:
-- Programmatic workflow scheduling
-- Pipeline monitoring
-- Automated data processing flow
-
-
-### Dremio
-
-A Data Lake engine used for processing different types of data including structured, semi-structured, and unstructured data.
-
-Features:
-- Data querying
-- Data processing
-- Unified data access
-
-
-### MinIO Server
-
-Object storage system used as Data Lake storage.
-
-Features:
-- S3-compatible storage
-- Large-scale data storage management
-
-
-### Nessie
-
-Data versioning system used for managing data changes.
-
-Features:
-- Version-controlled data management
-- Data history tracking
-
-
-### Metabase
-
-Data analytics platform used for visualization and reporting.
-
-Features:
-- Data querying
-- Dashboard creation
-- Executive summary generation
-
-
-## Tech Stack
+## Technologies
 
 - Apache Airflow
 - Dremio
@@ -499,11 +278,25 @@ Features:
 - Metabase
 
 
+## Main Features
+
+- Workflow orchestration
+- Data processing
+- Object storage
+- Data versioning
+- Data visualization
+
+
 Repository:
 
 https://github.com/dinanazizi/datalake-cloud-project
 
 
 
+# Contact
 
----
+LinkedIn:
+(https://www.linkedin.com/in/dinanhifzhanazizi/)
+
+Email:
+YOUR_EMAIL
