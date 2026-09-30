@@ -18,10 +18,8 @@ My experience includes PCB development, MCU-based control systems, RTL design, h
 ## PCB & Hardware
 
 - Schematic Design
-- Component Selection
 - PCB Layout and Routing
 - Multilayer PCB Design
-- ERC / DRC Verification
 - Hardware Testing
 
 
@@ -31,9 +29,6 @@ My experience includes PCB development, MCU-based control systems, RTL design, h
 - ESP32 / ESP8266
 - Embedded C/C++
 - Sensor Integration
-- UART
-- I2C
-- SPI
 - MQTT
 
 
@@ -43,7 +38,6 @@ My experience includes PCB development, MCU-based control systems, RTL design, h
 - SystemVerilog
 - RTL Design
 - FSM
-- AXI4-Lite
 - FPGA Verification
 
 
@@ -52,14 +46,7 @@ My experience includes PCB development, MCU-based control systems, RTL design, h
 - Python
 - Git
 - AWS IoT Core
-- Streamlit
-- Apache Airflow
-- Dremio
-- MinIO
-- Nessie
-- Metabase
-
-
+- Grafana
 
 # Featured Projects
 
