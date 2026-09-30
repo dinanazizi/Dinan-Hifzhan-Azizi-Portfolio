@@ -283,7 +283,7 @@ https://github.com/dinanazizi/datalake-cloud-project
 # Contact
 
 LinkedIn:
-(https://www.linkedin.com/in/dinanhifzhanazizi/)
+https://www.linkedin.com/in/dinanhifzhanazizi/
 
 Email:
-YOUR_EMAIL
+dinanhifzhanazizi@gmail.com
